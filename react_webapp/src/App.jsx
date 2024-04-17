@@ -6,7 +6,10 @@ function App() {
 
   return (
     <div className='main_container'>
-      <p>Hello World</p>
+      <div className='container0'>
+        <h1 id='name'>Maxime Reynaud</h1>
+        <h3 id='sub-name'>Computer Scientist & cybersecurity</h3>
+      </div>
       <div className='container1'>
         <p>container1</p>
       </div>
