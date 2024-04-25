@@ -3,7 +3,6 @@ html, body {
   color: white;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
   overflow-x: hidden; /* This prevents any scroll bars that might add space */
 }
 
@@ -18,20 +17,91 @@ p {
   /* font-size: 22px; */
 }
 
+.backgroundCont{
+  position: relative;
+  height: 100vh; 
+  background-image: url(assets/pexels-arnie-chou-304906-1229042.jpg);
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .container0, .container1, .container2, .container3 {
   height: 100vh; 
   position: relative;
 }
 
 .container0 {
-  background-color: rgb(0, 0, 0);
-  text-align: left;
-  height: 60vh; 
+  position: absolute; /* Position absolute to overlap */
+  top: 0; /* Adjust as needed */
+  left: 0; /* Adjust as needed */
+  width: 100%; /* Take the full width of the backgroundCont */
+  height: 100%; /* Take the full height of the backgroundCont */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 }
 
-.container1 {
+.names{
+  font-size: 2vw;
+}
+
+/* #fname{
+  margin-top: 20vh; 
+  margin-left: 25vw;
+  margin-bottom: 0vh;
+} */
+
+/* #lname{
+  margin-top: 0vh;
+  margin-left: 27vw;
+} */
+
+#sub-name {
+  color: #d3d3d3;
+  margin-top: 0vh;
+  margin-left: 0vw;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: rgba(0, 0, 0, 0.335); /* Semi-transparent black */
+  display: inline; /* Apply the background only to the text */
+  padding: 0.2em; /* Space around the text */
+  border-radius: 5px;
+}
+
+/* #lockIcon{
+  margin-top: -25vh; 
+  margin-left: 65vw;
+  width: 12vw;
+  position:absolute;
+  opacity: 0.5;
+} */
+
+/* .container1 {
   background-image: linear-gradient(to bottom, rgb(0, 0, 0), #7B7B7B);
-} 
+}  */
+
+.quote{
+  margin: 10vh 5vw;
+}
+
+#quote_author{
+  margin-top: 1.5vh;
+  text-align: right;
+}
+
+.intro_text{
+  margin-left: 50vw;
+  margin-top: 30vh;
+  line-height: 2; 
+}
+
+.globe_style{
+  position: absolute;
+  margin-top:0vh;
+  margin-left: auto;
+}
 
 /* .container2 {
   background-color: rgb(17, 255, 0);
@@ -40,41 +110,3 @@ p {
 /* .container3 {
   background-color: rgb(255, 0, 0);
 } */
-
-.names{
-  font-size: 2vw;
-}
-
-#fname{
-  margin-top: 30vh;
-  margin-left: 25vw;
-  margin-bottom: 0vh;
-}
-
-#lname{
-  margin-top: 0vh;
-  margin-left: 27vw;
-}
-
-#sub-name {
-  color: #7B7B7B;
-  margin-top: 0vh;
-  margin-left: 27vw;
-}
-
-#lockIcon{
-  margin-top: -25vh; 
-  margin-left: 65vw;
-  width: 12vw;
-  position:absolute;
-  opacity: 0.5;
-}
-
-.quote{
-  margin: auto 5vw;
-}
-
-#quote_author{
-  margin-top: 1.5vh;
-  text-align: right;
-}
