@@ -93,20 +93,42 @@ p {
 
 .intro_text{
   margin-left: 50vw;
-  margin-top: 30vh;
-  line-height: 2; 
+  margin-top: 20vh;
+  line-height: 2;
+   
 }
 
+#i_1{
+  margin-top: 15vh;
+}
+
+#i_2{
+  margin-top: 10vh;
+}
 .globe_style{
   position: absolute;
   margin-top:0vh;
   margin-left: auto;
 }
 
-/* .container2 {
-  background-color: rgb(17, 255, 0);
-} */
+.container2 {
+  height: 75vh;
+  background: linear-gradient(rgb(0, 0, 0),rgb(255, 255, 255))
+} 
 
-/* .container3 {
-  background-color: rgb(255, 0, 0);
-} */
+.container3 {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.project_text{
+  margin-top: 0;
+}
+
+#P_title{
+  color: black;
+  margin-top: 0;
+}
+#grid{
+  text-align: center;
+}

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import MyGlobe from '../components/globe';
+import BasicMasonry from '../components/project_grid';
 import lockIcon from './assets/Lock_Icon.png'
 
 function App() {
@@ -29,7 +30,11 @@ function App() {
           <p>I have started my Computer Science journey by learning robotics and discovering a field of infinite possibility at age 10, this path
             eventualy led me to where I am today with a passion for cybersecurity.
           </p>
-          <p>
+          <p id='i_1'>
+            Growing up living in multiple country has been a continous learning experience with invaluablea life lessons.
+          </p>
+          <p id='i_2'>
+            Montpellier / France, Jakarta / indonesia, Shanghai / China, Hong Kong / RAS Hong Kong, Exeter / United Kingdom
           </p>
         </div>
         <div className='globe_style'>
@@ -37,14 +42,22 @@ function App() {
         </div>
       </div>
 
-      {/*
       <div className='container2'>
         <p>container2</p>
       </div>
 
       <div className='container3'>
-        <p>container3</p>
-      </div> */}
+        <div className='project_text'>
+          <h1 id='P_title'>My Projects</h1>
+        </div>
+        <div id='grid'>
+          <BasicMasonry/>
+        </div>
+      </div>
+
+      <div className='container4'>
+        <p>container4</p>
+      </div>
     </div>
   );
 }
